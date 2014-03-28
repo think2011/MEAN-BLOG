@@ -1,0 +1,21 @@
+{
+  "name": "MEAN-BOLG",
+  "version": "0.0.1",
+  "authors": [
+    "think2011 <452125301@qq.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "jquery": "*",
+    "angular-route": "~1.2.15"
+  }
+}
