@@ -1,6 +1,15 @@
 var app = angular.module('app', ['ngRoute']);
 
-app.config(function ($routeProvider) {
+app.directive('focus', function () {
+    return  {
+        restrict: 'A', // 限制只能通过 属性(attribute) 调用
+        link: function (scope, element, attr) {
+            element[0].focus();
+        }
+    }
+});
+
+app.config(function ($routeProvider, $locationProvider) {
     $routeProvider.
         when('/', {
             templateUrl: 'list.html',
@@ -21,7 +30,12 @@ app.config(function ($routeProvider) {
         when('/article', {
             templateUrl: 'article.html',
             controller: articleCtrl
+        }).
+        otherwise({
+            redirectTo: '/'
         });
+
+    $locationProvider.html5Mode(true);
 });
 
 function listCtrl ($scope) {
@@ -50,6 +64,5 @@ function postCtrl ($scope) {
 
 function articleCtrl ($scope) {
 }
-
 
 angular.bootstrap(document, ['app']);
