@@ -1,4 +1,4 @@
-实践MEAN开发留言博客-1 (Mongodb+Express+Angularjs+Node.js)
+实践MEAN开发留言博客(Mongodb+Express+Angularjs+Node.js)
 ===
 
 此页面为静态页面素材
