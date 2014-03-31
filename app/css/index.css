@@ -1,6 +1,6 @@
 
 #main {
-    width: 800px;
+    width: 700px;
     margin: 15px auto;
 }
 
@@ -20,21 +20,24 @@
     border-color:#0085FF;
 }
 
-.pull-right {
-    float: right;
+#paging {
+    text-align: right;
+    list-style: none;
+    margin-top: 5px;
 }
 
-[contenteditable=true]:empty:before {
-    content: attr(placeholder);
-    color:#aaa;
+#paging li {
+    margin: 0 5px;
+    display: inline-block;
 }
 
-input, [contenteditable=true] {
+
+input, textarea {
     border:1px solid #eee;
     transition:0.3s;
 }
 
-input:focus, [contenteditable=true]:focus {
+input:focus, textarea:focus {
     box-shadow: 0 0 3px #0085FF;
     border-color:#0085FF;
 }
@@ -62,6 +65,10 @@ input:focus, [contenteditable=true]:focus {
 #post [placeholder]:focus {
     box-shadow: 0 0 3px #0085FF;
     border-color:#0085FF;
+}
+
+#post textarea {
+    min-height: 70px;
 }
 
 #main .title {
@@ -99,13 +106,14 @@ input:focus, [contenteditable=true]:focus {
     vertical-align: top;
 }
 
-#comments .comment {
+#comments form textarea {
+    width: 98%;
     min-height: 50px;
     margin:15px 0;
     padding: 5px;
 }
 
-#comments .comment:focus {
+#comments form textarea:focus {
     box-shadow: 0 0 3px #0085FF;
     border-color:#0085FF;
 }
