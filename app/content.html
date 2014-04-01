@@ -1,0 +1,24 @@
+<div class="user">
+    <div class="text-muted">{{ post.date | date: 'yyyy-MM-dd HH:mm:ss' }}</div>
+</div>
+<div class="contents">
+    <h2 class="title">{{ post.title }}</h2>
+
+    <p>{{ post.content }}</p>
+    <div id="comments">
+        <table>
+            <tr ng-repeat="comment in post.comments">
+                <!-- $index 是ng-repeat的索引 -->
+                <td>#{{ $index + 1 }}</td>
+                <td>{{ comment.comment }}</td>
+            </tr>
+        </table>
+
+        <form ng-submit="form.submit()">
+            <textarea ng-model="form.comment" placeholder="我想说.."></textarea>
+            <button class="btn btn-danger pull-right">发表评论</button>
+        </form>
+    </div>
+</div>
+
+    

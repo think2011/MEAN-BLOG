@@ -1,0 +1,119 @@
+
+#main {
+    width: 700px;
+    margin: 15px auto;
+}
+
+#search {
+    text-align: right;
+}
+
+#search input {
+    width: 200px;
+    padding: 5px 8px;
+    border:1px solid #ddd;
+    transition: 0.3s;
+}
+
+#search input:focus {
+    box-shadow: 0 0 3px #0085FF;
+    border-color:#0085FF;
+}
+
+#paging {
+    text-align: right;
+    list-style: none;
+    margin-top: 5px;
+}
+
+#paging li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+
+input, textarea {
+    border:1px solid #eee;
+    transition:0.3s;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 3px #0085FF;
+    border-color:#0085FF;
+}
+
+#logo a:link, #logo a:visited {
+    color: #4f4f4f;
+}
+
+.btn a {
+    color: #fff;
+}
+
+#post {
+    width: 500px;
+    margin:0 auto;
+}
+
+#post [placeholder] {
+    width: 480px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    padding: 8px 10px;
+}
+
+#post [placeholder]:focus {
+    box-shadow: 0 0 3px #0085FF;
+    border-color:#0085FF;
+}
+
+#post textarea {
+    min-height: 70px;
+}
+
+#main .title {
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+}
+
+#main .user {
+    min-width: 120px;
+    padding: 0 15px 0 0;
+    text-align: right;
+    border-right: 1px double #ddd;
+    display: table-cell;
+    vertical-align: top;
+}
+
+#main .contents {
+    width: 100%;
+    color: #666;
+    padding: 0 15px;
+    display: table-cell;
+    overflow: hidden;
+}
+
+#comments {
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+#comments table tr td {
+    color: #999;
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+#comments form textarea {
+    width: 98%;
+    min-height: 50px;
+    margin:15px 0;
+    padding: 5px;
+}
+
+#comments form textarea:focus {
+    box-shadow: 0 0 3px #0085FF;
+    border-color:#0085FF;
+}

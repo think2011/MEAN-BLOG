@@ -1,0 +1,85 @@
+/* reset */
+body,dl,dd,ul,ol,figure,h1,h2,h3,h4,h5,h6,p,pre,blockquote,form,fieldset,legend,input,button,select,textarea{margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}pre,code,kbd,samp{font-family:monospace,sans-serif;_font-family:'Courier New',monospace,sans-serif;font-size:1em}pre{white-space:pre;white-space:pre-wrap;white-space:pre-line;word-wrap:break-word}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;visibility:hidden}.clearfix{zoom:1}.clearfix:after{clear:both}* html .clearfix{zoom:1}*:first-child+html .clearfix{zoom:1}audio[controls],canvas,video{display:inline-block;*display:inline;*zoom:1}html{font-size:100.01%;height:100%;overflow-y:scroll;cursor:default;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{background-color:#fff;color:#444;height:100%}img,fieldset{border:0 none}img{vertical-align:top;-ms-interpolation-mode:bicubic}a,a:active,a:hover{outline:0}a:focus{outline:thin dotted}a,a:link{color:#00e;text-decoration:none}a:hover{text-decoration:underline}a:visited{text-decoration:none;color:#551a8b}.hidden{border:0 !important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);height:1px !important;margin:-1px;overflow:hidden;padding:0 !important;position:absolute !important;width:1px}dd{margin:0 0 0 40px}nav ul,nav ol{list-style:none}form{overflow:visible}fieldset{line-height:1}legend{*margin-left:-7px}button,input,select,textarea{vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;*overflow:visible}button,input[type="button"],input[type="reset"],input[type="submit"],.form-btn,.btn{cursor:pointer;-webkit-appearance:button}input[type="checkbox"],input[type="radio"]{box-sizing:border-box}input[type="checkbox"]{vertical-align:bottom;*vertical-align:baseline}input[type="radio"]{vertical-align:text-bottom}input{_vertical-align:text-bottom}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}input[type="email"],input[type="text"],input[type="password"],input[type="select"],input[type="search"],input[type="file"],textarea,select{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;border:1px solid #7f9db9}input:focus,textarea:focus,select:focus{outline-width:0}select{background-color:transparent}label{font-weight:normal}label.required:after{content:"*";color:red;font-family:"Lucida Grande",Verdana,Arial,Helvetica,sans-serif}button,input[type="submit"],input[type="reset"],input[type="button"],.form-btn{width:auto;*width:1;overflow:visible}table{border-collapse:collapse;border-spacing:0}th,td{padding:0;text-align:left;vertical-align:middle}h1{font-size:2em}h2{font-size:1.5em}h3{font-size:1.17em}h4{font-size:1em}h5{font-size:.83em}h6{font-size:.67em}p{margin-bottom:4px}
+body {
+    font-size: 14px;
+    color: #4f4f4f;
+	font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+
+/* angularJS cloak */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+a:link {
+    color: #0085FF;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0085FF;
+}
+
+.btn {
+    color: #fff;
+    border:none;
+    padding: 3px 9px;
+    border-radius: 3px;
+}
+
+.btn-danger {
+    color: #fff;
+    background: #f06544;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background: #ff886d;
+}
+
+.text-muted {
+    color: gray;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-right {
+    float: right;
+}
+
+header {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    border-bottom: 1px solid #eee;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    border-bottom: 1px solid #eee;
+}
+
+table tr th, table tr td {
+    padding: 8px 0;
+}
+
+input {
+    padding-left: 5px;
+}

@@ -1,0 +1,20 @@
+<table>
+    <tr>
+        <th>主题 -
+            <button class="btn btn-danger"><a href="/#/post/add">发表文章</a></button>
+        </th>
+        <th>时间</th>
+    </tr>
+    
+    <!-- ng-repeat可以根据NG数据模型遍历数据，相当于forEeach -->
+    <tr ng-repeat="post in posts">
+        <td><a href="/#/post/{{ post._id }}">{{ post.title }}</a></td>
+        <!-- 这里用到了filter过滤器，方便的转换了显示的时间格式 -->
+        <td class="text-muted">{{ post.date | date: 'yyyy-MM-dd HH:mm:ss' }}</td>
+    </tr>
+    
+   <!-- ng-hide表示，当文章列表有内容，将不显示这里 -->
+    <tr ng-hide="posts.length">
+        <td colspan="2" class="text-muted text-center">没有文章哦</td>
+    </tr>
+</table>
